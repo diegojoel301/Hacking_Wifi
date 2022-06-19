@@ -44,7 +44,7 @@ if [ $# -eq 1 ]; then
 	service NetworkManager restart
 else
 	echo "[!] Ejecutar asi:"
-	echo -e "\tsudo ./wep_attack.sh -i interfaz"
+	echo -e "\tsudo ./wep_attack.sh interfaz"
 	echo "[+] Interfaces: "
 	ifconfig | grep ": f" | awk '{print $1}' | tr -d ':'
 fi
