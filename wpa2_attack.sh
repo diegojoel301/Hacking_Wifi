@@ -7,7 +7,7 @@ if [ $# -eq 2 ]; then
         echo "[+] Lenvantando la interfaz $interfaz a modo monitor....."
         airmon-ng check kill
         airmon-ng start $interfaz
-        echo "[+] Busca la red a vulnerar: "
+        echo "[+] Busca la red a vulnerar: (Una vez sepas cual red atacar, cierra la ventana externa) "
 
         rm archivo &>/dev/null
 
